@@ -1,0 +1,22 @@
+modules:
+  jira:issuePanel:
+    - key: risk-analyst-issue-panel
+      resource: main
+      resolver:
+        function: resolver
+      render: native
+      title: Jira Expense Tracker
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  runtime:
+    name: nodejs22.x
+  id: ari:cloud:ecosystem::app/da76c512-b69e-49b1-a0c2-a497071dc5a1
+permissions:
+  scopes:
+    - storage:app
