@@ -1,6 +1,6 @@
 modules:
   jira:issuePanel:
-    - key: risk-analyst-issue-panel
+    - key: expense-tracker-issue-panel
       resource: main
       resolver:
         function: resolver
